@@ -1,0 +1,50 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color:#808080;
+}
+
+.nav {
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+}
+
+.nav a {
+    font-size:1.5rem;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+
+.footer a i{
+    margin: 2rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    width: 40%;
+    height: auto;
+    border-radius: 15%;
+    border: 1px dotted #aaaaaa  ;
+}
+
+.p-card-caption {
+    width: 40%;
+    text-align: center;
+}
