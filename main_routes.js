@@ -2,15 +2,19 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next){
-	res.render('index', { title: 'Spooky Scary Home Invader'})
+	res.render('index')
 });
 
 router.get('/now', function(req, res, next){
-    res.render('now', { title: 'Wacchu gonna do now?'})
+    res.render('now')
 });
 
 router.get('/portfolio', function(req, res, next){
-    res.render('portfolio', {title: 'Portfolio'})
+    res.render('portfolio')
+});
+
+router.get('/speaker', function(req, res, next){
+    res.render('speaker')
 });
 
 module.exports = router;
