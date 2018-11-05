@@ -11,64 +11,65 @@
 
     <div class="project-container">
         {% include 'projects/_background-noise.njk' %}
-        <button id="noise">
+        <div class="doodle js html css filterable" id="noise">
             <figure>
                 <img src="images/project-cards/background-noise.jpg"
                      alt="Screenshot of a dark screen with several small colored dots in a seemingly random pattern"
                      class="project-card">
                 <figcaption class="p-card-caption">Doodle: background noise of the universe</figcaption>
             </figure>
-        </button>
+        </div>
         {% include 'projects/_simplybreathe.njk' %}
-        <button id="breathe">
+        <div class="doodle js html css filterable" id="breathe">
             <figure>
                 <img src="images/project-cards/simplybreathe.jpg"
                      alt="Screenshot of deep breathing instructions accompanied by a gradient colored circle"
                      class="project-card">
                 <figcaption class="p-card-caption">Doodle: Simply Breathe</figcaption>
             </figure>
-        </button>
+        </div>
         {% include "projects/_confetti.njk" %}
-        <button id="confetti">
+        <div class="doodle js html css filterable" id="confetti">
             <figure>
                 <img src="images/project-cards/confetti.jpg"
                      alt="Screenshot of a dark screen with multicolored bubbles and a transparent line of text saying 'click me'"
                      class="project-card">
                 <figcaption class="p-card-caption">Doodle: Confetti Burst</figcaption>
             </figure>
-        </button>
+        </div>
         {% include "projects/_dev.njk" %}
-        <button id="dev">
+        <div class="writing python filterable" id="dev">
             <figure>
                 <img src="images/project-cards/dev-logo.jpg" alt="Dev.to website logo" class="project-card">
                 <figcaption class="p-card-caption">Writing published on Dev.to</figcaption>
             </figure>
-        </button>
+        </div>
         {% include "projects/_mentoring.njk" %}
-        <button id="mentoring">
+        <div class="talk filterable" id="mentoring">
             <figure>
                 <img src="images/project-cards/mentoring.jpg"
                      alt="Title slide from The Art of Mentoring and Being Mentored" class="project-card">
                 <figcaption class="p-card-caption">Talk: The Art of Mentoring</figcaption>
             </figure>
-        </button>
+        </div>
         {% include "projects/_zen.njk" %}
-        <button id="zen">
+        <div class="talk python filterable" id="zen">
             <figure>
                 <img src="images/project-cards/zopip.jpg" alt="Title slide from The Zen of Python in Practice"
                      class="project-card">
                 <figcaption class="p-card-caption">Talk: The Zen of Python in Practice</figcaption>
             </figure>
-        </button>
+        </div>
         {% include "projects/_why.njk" %}
-        <button id="why">
+        <div class="talk python filterable" id="why">
             <figure>
                 <img src="images/project-cards/why_python.jpg" alt="Title slide from Why Python?" class="project-card">
                 <figcaption>Talk: Why Python?</figcaption>
             </figure>
-        </button>
+        </div>
     </div>
 
     <script src="js/modal.js"></script>
+    <script src="js/tags.js"></script>
 
 {% endblock %}
