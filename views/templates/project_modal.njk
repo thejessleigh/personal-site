@@ -1,0 +1,14 @@
+<div class="modal" id="{{ modalId }}">
+    <span class='close-button'>&times;</span>
+    <div class="modal-content">
+        <h2>{{ title }}</h2>
+        <h3>Description</h3>
+        {% block projectContent %}
+
+        {% endblock %}
+        <h3>Links</h3>
+        {% block links %}
+
+        {% endblock %}
+    </div>
+</div>

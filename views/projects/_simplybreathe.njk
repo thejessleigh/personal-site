@@ -1,0 +1,23 @@
+{% extends "templates/project_modal.njk" %}
+
+{% set modalId = "breathe-modal" %}
+
+{% set title = "Simply Breathe" %}
+
+{% block projectContent %}
+    <p>
+        Doodle I made for #Codevember 2018 Day 2 - Time. The circle in the middle expands, pulses, and contracts.
+        The idea is to time your breath to the circle to ground yourself and relax.
+    </p>
+
+    <p>
+        The color gradient in the circle changes depending on the time of day.
+    </p>
+{% endblock %}
+
+{% block links %}
+    <p>
+        View the code <a href="https://github.com/thejessleigh/doodles">on Github</a>, or see the project in action
+        at <a href="http://simplybreathe.space">simplybreathe.space</a>.
+    </p>
+{% endblock %}

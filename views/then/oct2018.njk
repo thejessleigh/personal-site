@@ -1,0 +1,42 @@
+{% extends "templates/_now.njk" %}
+
+{% set date="2018 October 22" %}
+
+{% set prev_date="march2018" %}
+
+{% set loc=".." %}
+
+{% block upto %}
+
+    <p>I started a new job at <a href="https://activecampaign.com">ActiveCampaign</a> as a Data Engineer!</p>
+    <p>However, it's been a pretty rough latter half of 2018. Had a health kerfuffle and lost my cat. Still picking myself up from all that.</p>
+    <p>Taking a break from <a href="https://www.pyohio.org">PyOhio</a> organizing until the new year. The 2018 conference was great, and 2019 is going to be even better!</p>
+
+{% endblock %}
+
+{% block upcoming %}
+    <p>I'm spending a lot of time reading. I also just got an N64, so I'm replaying Mario 64 and The Legend of Zelda: Ocarina of Time. My goals for the rest of 2018 are to finish up the <a href="https://bookriot.com/2017/12/15/book-riots-2018-read-harder-challenge/">BookRiot Read Harder Challenge</a> and be as cosy as possible. This includes wearing cute and spooky enamel pins, lighting lots of candles, baking, and relearning to crochet. I want to make blankets.</p>
+    <p>If I'm feeling super ambitious, I'm going to finish up a v0 of the Bookpinions project and get that sucker into production. But that's only if I'm really feeling it. I'm not going to force anything for the rest of the year. My 2018 motto has been "less is more."</p>
+{% endblock %}
+
+
+{% block hair %}
+    <p>
+        I have a poorly maintainted undercut that changes colors. My hair was blue for a hot minute, but now it's more reddish purple. Some of the blue is starting to peek out after repeated washes.
+    </p>
+{% endblock %}
+
+{% block additional %}
+    <h1>How are you holding up without your cat?</h1>
+    <p>
+        Tbh it's been really rough. I'm thinking of getting cats in January, after holiday travel, because the apartment is starting to feel pretty lonely.
+    </p>
+
+
+    <h1>You're kind of a downer right now.</h1>
+    <p>I'm sorry! Have a super cute photo of my plushie fam hanging out on a broken couch. Also, do not ask me about the broken couch, it's more downer content.</p>
+    <p>
+        <img src="{{ loc }}/images/plushie_fam.JPG" alt="Various Super Mario themed plush dolls sitting on a Super Mario throw blanket on top of a broken blue settee.">
+    </p>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "templates/project_modal.njk" %}
+
+{% set modalId = "zen-modal" %}
+
+{% set title = "The Zen of Python in Practice: Balancing Idealsim with Production Concerns" %}
+
+{% block projectContent %}
+    <p>
+        This talk was originally given at Chicago Coder Conference 2017.
+        If you would like me to craft a version of this presentation for your conference or event, contact me via
+        <a href="mailto:j.l.unrein+contact@gmail.com">email</a> or <a
+                href="https://twitter.com/thejessleigh">Twitter.</a>
+    </p>
+
+    <h3>Abstract</h3>
+    <p>
+        Shipping code is not always ideal or beautiful. The Zen of Python is a favorite Pythonista Easter Egg accessed
+        by typing <code>import this</code> into a Python shell. It prints out a poem full of aphorisms and high minded
+        ideals that we all aspire to when we're developing. But once code hits production, things have a tendency to
+        fall apart. Aphorisms that seem so obvious and simple in our side projects sound hopelessly optimistic when
+        thinking about our day to day work.
+    </p>
+    <p>
+        This talk will walk through some of the ideals laid out in the Zen of Python and examine the challenges we face
+        in production codebases through this lens. The Zen of Python encourages flat, sparse, simple programs without
+        guesswork in the face of ambiguous problems. But sometimes you just need to push that bug fix. Our code doesn't
+        always have to be beautiful, but we need to learn not to let the adequate be the enemy of the good.
+    </p>
+
+    <h3>Intended Audience</h3>
+    <p>This talk is great for people who are new to programming, or have moderate programming experience but are new to
+        Python.</p>
+{% endblock %}
+
+{% block links %}
+    <ul>
+        <li>
+            <a href="https://github.com/thejessleigh/talks/blob/master/python_talks/zen_of_python_in_practice/zopip_presenter_notes.pdf">
+                Slides with presenter notes
+            </a>
+        </li>
+    </ul>
+
+{% endblock %}

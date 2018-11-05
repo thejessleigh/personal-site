@@ -1,7 +1,28 @@
 {% extends "templates/layout.njk" %}
 
-{% block content %}
+{% set title="Home" %}
 
-<h2>"No body, no mind, no soul," the whispers congealed around her. Sticky, like a fog.</h2>
+{% block content %}
+    <div class="container">
+
+    <h1>About</h1>
+
+    <p>I'm a software and data person, writer, public speaker, and community organizer.</p>
+
+    <p>I moved to Chicago in 2014 to attend Dev Bootcamp (RIP). I work at <a href="https://activecampaign.com">ActiveCampaign</a>
+        as a data engineer.</p>
+
+    <p>One of my passions is providing career support and continuing education to fellow career changers. I co-organized
+        the Chicago chapter of PyLadies from 2015 to 2017, and I help organize <a href="https://pyohio.org">PyOhio</a>,
+        the Midwest's largest Python conference. I also write and speak about software development, marginalized genders
+        in tech, community building, and professional development.</p>
+
+    <p>If you would like me to speak at your event, please look over <a href="/speaker">my speaker info</a> to make sure
+        we're on the same page. The best ways to reach out to me are <a
+                href="mailto:j.l.unrein+contact@gmail.com">email</a> and <a href="https://twitter.com/thejessleigh">Twitter.</a>
+    </p>
+    </div>
+
+    {#<h2>"No body, no mind, no soul," the whispers congealed around her. Sticky, like a fog.</h2>#}
 
 {% endblock %}

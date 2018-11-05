@@ -1,0 +1,22 @@
+{% extends "templates/project_modal.njk" %}
+
+{% set modalId = "confetti-modal" %}
+
+{% set title = "Confetti Burst" %}
+
+{% block projectContent %}
+    <p>
+        Simple fun doodle that creates a burst of colorful dots when you click the screen.
+    </p>
+
+    <p>
+        Each click creates as many dots as have left the screen, so the longer you wait in between clicks,
+        the larger the burst of dots.
+    </p>
+{% endblock %}
+
+{% block links %}
+    <p>
+        View the code <a href="https://github.com/thejessleigh/doodles">on Github</a>.
+    </p>
+{% endblock %}

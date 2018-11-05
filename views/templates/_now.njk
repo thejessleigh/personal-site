@@ -1,0 +1,42 @@
+{% extends "templates/layout.njk" %}
+
+{% set title="Now" %}
+
+{% block content %}
+
+<div class="container">
+    <p>
+        <a href="http://nownownow.com/about">What is a now page?</a>
+    </p>
+
+    <h1>What have you been up to lately?</h1>
+    {% block upto %}
+
+    {% endblock %}
+
+    <h1>What do you have coming up? </h1>
+    {% block upcoming %}
+
+    {% endblock %}
+
+    <h1>What color is your hair now?</h1>
+    {% block hair %}
+
+    {% endblock %}
+
+    {% block additional %}
+
+    {% endblock %}
+
+    <p>
+        last updated {{ date }}
+    </p>
+
+    <p>
+        <a href="/then/{{ prev_date }}">previous update</a>
+    </p>
+</div>
+
+
+
+{% endblock %}

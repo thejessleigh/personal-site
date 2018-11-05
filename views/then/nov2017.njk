@@ -1,0 +1,64 @@
+{% extends "templates/_now.njk" %}
+
+{% set date="2017 November 29" %}
+
+{% set loc=".." %}
+
+<h1>It's almost the new year!</h1>
+
+{% block upto %}
+
+    <p>
+        Getting up and running for 2018!
+    </p>
+
+{% endblock %}
+
+{% block upcoming %}
+    <p>I've defined a new goals for the new year.</p>
+    <h2>What are your software goals for early 2018?</h2>
+    <ul>
+        <li>Speak at a couple conferences</li>
+        <li>Finish my Bookpinions project</li>
+        <li>Finish my first tensor flow project</li>
+        <li>Get <code>Test Driven Python</code> into a stable, workable state for newbies.</li>
+        <li>Write some blog posts?</li>
+    </ul>
+    <h2>What are your non-software goals for 2018?</h2>
+    <ul>
+        <li>Host the second <a href="http://superfunfriends.zone">Super Fun Friends Zone</a> mini-conference. I
+            co-organize with <a href="http://stephanie.slattery.website">Stephanie Slattery</a> and our first event was
+            a huge success!
+        </li>
+        <li>Read several books from the <a href="https://themorningnews.org/tob/">2018 Tournament of Books</a> longlist.
+        </li>
+        <li>Start logging all the movies I watch on my <a href="https://letterboxd.com/thejessleigh/">Letterboxd</a>
+            profile.
+        </li>
+        <li>Play some of the board games and TTRPGs I've kickstarted over the past couple of years. Especially <a
+                    href="http://www.magpiegames.com/category/bluebeards-bride/">Bluebeard's Bride</a>.
+        </li>
+        <li>Re-arrange my furniture and spend quality time with my cat.</li>
+    </ul>
+{% endblock %}
+
+
+{% block hair %}
+    <p>
+        Purple on top, magenta at the ends, and pink at the base of my neck. Needs a touch up, the roots are growing
+        out.
+    </p>
+{% endblock %}
+
+{% block additional %}
+    <h1>You have a cat?</h1>
+    <p>
+        I have a cat! His name is <strong>Mister Fitzwhiskers Darcy</strong>, but his friends call him Fitz. He's
+        missing a leg, but that doesn't stop him from running up and down the halls at night, singing the songs of his
+        people.
+    </p>
+    <p>
+        <img src="{{ loc }}/images/fitz.jpg" alt="Photo of a grey cat staring up into the camera">
+    </p>
+
+{% endblock %}
