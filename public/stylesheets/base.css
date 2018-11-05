@@ -48,3 +48,66 @@ a:hover {
     width: 40%;
     text-align: center;
 }
+
+button {
+    background:none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+    text-align: inherit;
+    cursor: pointer;
+}
+
+.modal {
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    background-color: #dddddd;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#ffffff;
+    padding: 5rem;
+    width: 75%;
+    height: 70%;
+    border-radius: 15%;
+    /*text-align: center;*/
+}
+
+.close-button {
+    position: absolute;
+    border: none;
+    width: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15%;
+    background-color: #bbbbbb;
+    right: 0;
+    /*margin-top: 10rem;*/
+    /*margin-right:7rem;*/
+}
+
+.close-button:hover {
+    background-color: #aaaaaa;
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translate(10%, 10%);
+    border-radius: 15%;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}

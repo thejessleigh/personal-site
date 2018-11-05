@@ -9,9 +9,14 @@ nunjucks.configure('views', {
 app.set('view engine', 'njk');
 app.listen(3000);
 
-const mainRouter = require('./routes');
+const mainRouter = require('./main_routes');
+const thenRouter = require('./then_routes');
 
-app.use('/', mainRouter);
 app.use(express.static(__dirname + '/public'));
+app.use('/', mainRouter);
+app.use('/then', thenRouter);
+app.use("*", function(req, res){
+	res.status(404).render('404')
+});
 
 module.exports = app;
