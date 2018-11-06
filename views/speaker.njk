@@ -2,6 +2,8 @@
 
 {% set title="Speaker Info" %}
 
+{% set stylesheet="./stylesheets/speaker.css" %}
+
 {% block content %}
 
     <h1>Speaker Info</h1>
@@ -57,5 +59,113 @@
     <h3>Long</h3>
     <p>Placeholder text - decide on how to deal with pronouns.</p>
 
+    <h1>Previous Speaking Engagmenets</h1>
+
+    <button class="collapsible">Meetup Appearances +</button>
+    <div class="talk-table">
+        <table>
+            <thead>
+            <tr>
+                <td>Event</td>
+                <td>Talk</td>
+                <td>Location</td>
+                <td>Date</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="https://generalassemb.ly/education/women-in-tech-breakfast/chicago/33739">Women in Tech
+                        Breakfast</a></td>
+                <td>Panelist: Breaking into a new field as a woman</td>
+                <td>Chicago, IL</td>
+                <td>April 7, 2017</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.meetup.com/Chicago-DevBootcamp-Chicago-Speakers-and-Workshop-Series/events/238220559/">Celebrating
+                        Women's History Month: Empowering and Inspiring Lightning Talks</a></td>
+                <td>Nasty Woman or: How I Learned to Stop Worrying and Love Being Abrasive</td>
+                <td>Chicago, IL</td>
+                <td>March 30, 2017</td>
+            </tr>
+            <tr>
+                <td><a href="https://generalassemb.ly/instructors/jess-unrein/6166#previously-taught">The Road to
+                        Code</a></td>
+                <td>Why Python?</td>
+                <td>Chicago, IL</td>
+                <td>May 24, 2016</td>
+            </tr>
+            <tr>
+                <td><a href="https://generalassemb.ly/instructors/jess-unrein/6166#previously-taught">A Day in the Life
+                        of a Jr. Web Developer</a></td>
+                <td>Panelist</td>
+                <td>Chicago, IL</td>
+                <td>July 2015</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button class="collapsible">Conference Talks +</button>
+    <div class="talk-table">
+        <table>
+            <thead>
+            <tr>
+                <td>Event</td>
+                <td>Talk</td>
+                <td>Location</td>
+                <td>Date</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="https://2017.writespeakcode.com">Write/Speak/Code 2017</a></td>
+                <td>Panelist: Invisible Illness in Tech</td>
+                <td>Portland, OR</td>
+                <td>August 26, 2017</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.pyohio.org">PyOhio 2017</a></td>
+                <td><a href="https://www.pyohio.org/schedule/presentation/276/">The Art of Mentoring and Being Mentored
+                        (because we are all always both)</a></td>
+                <td>Columbus, OH</td>
+                <td>July 29-30, 2017</td>
+            </tr>
+            <tr>
+                <td><a href="http://www.chicagocoderconference.com/">Chicago Coder Conference</a></td>
+                <td>
+                    <a href="http://www.chicagocoderconference.com/sessions/the-zen-of-python-in-practice-balancing-idealism-with-production-concerns/">The
+                        Zen of Python In Practice: Balancing Idealism with Production Concerns</a></td>
+                <td>Chicago, IL</td>
+                <td>June 27, 2017</td>
+            </tr>
+            <tr>
+                <td><a href="http://codelandconf.com">Codeland 2017</a></td>
+                <td><a href="http://codelandconf.com/speakers/jess-unrein/">Write Your Resume Like a Fanfic</a>
+                    (Workshop)
+                </td>
+                <td>New York, NY</td>
+                <td>April 22, 2017</td>
+            </tr>
+            <tr>
+                <td><a href="https://sites.google.com/site/iwd2017chi/">Women Techmakers International Women's Day
+                        Summit
+                        2017</a></td>
+                <td>Panelist: Community Empowerment Through Technology</td>
+                <td>Chicago, IL</td>
+                <td>April 8, 2017</td>
+            </tr>
+            <tr>
+                <td><a href="https://pyohio.org/">PyOhio 2016</a></td>
+                <td><a href="http://pyvideo.org/pyohio-2016/python-logging-a-meditation-on-silent-failures.html">Python
+                        Logging: A medidation on silent failures</a></td>
+                <td>Columbus, OH</td>
+                <td>July 30, 2016</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/collapsible.js"></script>
 
 {% endblock %}
