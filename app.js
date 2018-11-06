@@ -1,4 +1,5 @@
-const express = require('express')
+#!/usr/bin/env nodejs
+const express = require('express');
 const app = express();
 const nunjucks = require('nunjucks');
 nunjucks.configure('views', {
