@@ -1,5 +1,5 @@
-var closeButtons = document.getElementsByClassName("close-button");
-var triggerList = ["noise", "breathe", "confetti", "dev", "mentoring", "zen", "why"];
+const closeButtons = document.getElementsByClassName("close-button");
+const triggerList = ["noise", "breathe", "confetti", "dev", "mentoring", "zen", "why"];
 
 
 function toggleModal(triggerId) {
@@ -14,3 +14,5 @@ Array.from(triggerList).forEach(function(triggerId) {
 Array.from(closeButtons).forEach(function(closeButton){
     closeButton.addEventListener("click", function() {toggleModal(".show-")})
 });
+
+// TODO: change click trigger from filterable div to img and figcaption - not fig - margin is too wide

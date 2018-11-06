@@ -41,23 +41,14 @@ a:hover {
     width: 40%;
     height: auto;
     border-radius: 15%;
-    border: 1px dotted #aaaaaa  ;
+    border: 1px dotted #aaaaaa;
 }
 
 .p-card-caption {
-    width: 40%;
+    max-width: 40%;
     text-align: center;
-}
-
-button {
-    background:none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    outline: inherit;
-    text-align: inherit;
-    cursor: pointer;
+    margin:0;
+    display:table;
 }
 
 .modal {
@@ -114,4 +105,17 @@ button {
 
 .hide{
     display: none;
+}
+
+.filterable {
+    cursor: pointer;
+}
+
+button {
+    background: #eeeeee;
+    border-radius:10%;
+}
+
+.pushed {
+    background: #aaaaaa;
 }
