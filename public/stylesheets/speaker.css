@@ -1,0 +1,24 @@
+@import "./base.css";
+
+.collapsible {
+    background-color:#eeeeee;
+    color: #444444;
+    cursor: pointer;
+    width:100%;
+    border:none;
+    text-align:left;
+    outline: 1px darkgrey solid;
+    font-size: 1.5rem;
+    margin-top:0.5rem;
+}
+
+.active, .collapsible:hover {
+    background-color: #cccccc;
+}
+
+.talk-table {
+    padding: 0 3rem;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
