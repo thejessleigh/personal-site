@@ -47,8 +47,8 @@ a:hover {
 .p-card-caption {
     max-width: 40%;
     text-align: center;
-    margin:0;
-    display:table;
+    margin-left:0;
+    padding-left:2.2rem;
 }
 
 .modal {
@@ -107,13 +107,14 @@ a:hover {
     display: none;
 }
 
-.filterable {
-    cursor: pointer;
-}
-
 button {
     background: #eeeeee;
     border-radius:10%;
+}
+
+.clickable-image{
+    display: inline;
+    cursor: pointer;
 }
 
 .pushed {
