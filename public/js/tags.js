@@ -34,7 +34,10 @@ function hideElements(showTags) {
 
 function getUrlVars() {
     href = window.location.href;
-    return href.substring(href.indexOf('tags=') + 5).split(',');
+    if(href.includes('tags')){
+        return href.substring(href.indexOf('tags=') + 5).split(',');
+    }
+    return []
 }
 
 function toggleButton(button) {
@@ -54,7 +57,7 @@ function toggleButton(button) {
 tags = getUrlVars();
 pushedButtons = [];
 tags.forEach(function(tag){
-    document.getElementById(tags).classList.add('pushed')
+    document.getElementById(tag).classList.add('pushed')
 });
 
 showTags = filterByTags(tags);
