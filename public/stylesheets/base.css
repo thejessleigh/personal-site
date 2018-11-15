@@ -50,3 +50,8 @@ a:hover {
     border-radius: 15%;
     margin: 5rem;
 }
+
+.container {
+    width:75%;
+    margin-left:5rem;
+}

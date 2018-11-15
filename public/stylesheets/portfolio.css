@@ -24,8 +24,8 @@
     position:fixed;
     left: 0;
     top: 0;
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 85%;
     background-color: #dddddd;
     opacity: 0;
     visibility: hidden;
@@ -40,21 +40,19 @@
     transform: translate(-50%, -50%);
     background-color:#ffffff;
     padding: 5rem;
-    width: 75%;
-    height: 70%;
-    border-radius: 15%;
-    /*text-align: center;*/
+    width: 65%;
+    height: 60%;
+    border-radius: 5%;
 }
 
 .close-button {
     position: absolute;
     border: none;
-    width: 2rem;
-    line-height: 2rem;
+    width: 4rem;
+    line-height: 4rem;
     text-align: center;
     cursor: pointer;
-    border-radius: 15%;
-    background-color: #bbbbbb;
+    border-radius: 50%;
     right: 0;
     /*margin-top: 10rem;*/
     /*margin-right:7rem;*/
@@ -65,10 +63,10 @@
 }
 
 .show-modal{
-    opacity: 1;
+    opacity: .98;
     visibility: visible;
     transform: scale(1) translate(10%, 10%);
-    border-radius: 15%;
+    border-radius: 10%;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
