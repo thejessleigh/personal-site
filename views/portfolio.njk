@@ -6,10 +6,27 @@
 
 {% block content %}
 
-    <h2>Portfolio</h2>
-    <p>
-        Click the card for information about the project
-    </p>
+    <div class="portfolio-header">
+        <h2>Portfolio</h2>
+
+
+        <div class="button-container">
+            <p>
+                Click to filter by topic
+            </p>
+            <button id="python">python</button>
+            <button id="doodle">doodle</button>
+            <button id="js">js</button>
+            <button id="html">html</button>
+            <button id="css">css</button>
+            <button id="writing">writing</button>
+            <button id="talk">talk</button>
+        </div>
+        <p>
+            Click the card for information about the project
+        </p>
+    </div>
+
 
     <div class="project-container">
         {% include 'projects/_background-noise.njk' %}
@@ -32,7 +49,7 @@
         </div>
         {% include "projects/_confetti.njk" %}
         <div class="doodle js html css filterable">
-            <figure  id="confetti" class="clickable-image">
+            <figure id="confetti" class="clickable-image">
                 <img src="images/project-cards/confetti.jpg"
                      alt="Screenshot of a dark screen with multicolored bubbles and a transparent line of text saying 'click me'"
                      class="project-card">
@@ -65,22 +82,13 @@
         {% include "projects/_why.njk" %}
         <div class="talk python filterable">
             <figure id="why" class="clickable-image">
-                <img src="images/project-cards/why_python.jpg" alt="Title slide from Why Python?" class="project-card">
+                <img src="images/project-cards/why_python.jpg" alt="Title slide from Why Python?"
+                     class="project-card">
                 <figcaption class="p-card-caption">Talk: Why Python?</figcaption>
             </figure>
         </div>
     </div>
 
-    <div class="button-container">
-        Click to filter by topic
-        <button id="python">python</button>
-        <button id="doodle">doodle</button>
-        <button id="js">js</button>
-        <button id="html">html</button>
-        <button id="css">css</button>
-        <button id="writing">writing</button>
-        <button id="talk">talk</button>
-    </div>
 
     <script src="js/modal.js"></script>
     <script src="js/tags.js"></script>

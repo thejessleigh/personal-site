@@ -3,21 +3,22 @@
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .project-card {
-    width: 40%;
-    height: auto;
+    max-width: 250px;
     border-radius: 15%;
     border: 1px dotted #aaaaaa;
 }
 
 .p-card-caption {
-    max-width: 40%;
+    font-size:20px;
     text-align: center;
     margin-left:0;
-    padding-left:2.2rem;
+    margin-top: 18px;
 }
 
 .modal {
@@ -80,10 +81,28 @@ button {
 }
 
 .clickable-image{
-    display: inline;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    max-width:200px;
 }
 
 .pushed {
     background: #aaaaaa;
+}
+
+.portfolio-header {
+    text-align: center;
+}
+
+.portfolio-header h2
+{
+    margin-top: 1rem;
+}
+
+.button-container {
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
