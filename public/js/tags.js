@@ -1,4 +1,4 @@
-const allTags = ['doodle', 'project', 'writing', 'talk', 'python', 'js', 'html', 'css'];
+const allTags = ['doodle', 'project', 'writing', 'talk', 'python', 'js', 'html', 'css', 'community', 'open-source'];
 const buttons = document.querySelectorAll('button');
 
 function filterByTags(tags) {
