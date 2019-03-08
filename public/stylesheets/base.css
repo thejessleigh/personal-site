@@ -3,12 +3,13 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: #a0a0a0;
+    text-decoration: underline;
+    color: #000000;
 }
 
 a:hover {
     color:#808080;
+    text-decoration:underline;
 }
 
 .nav {
@@ -18,7 +19,13 @@ a:hover {
 }
 
 .nav a {
-    font-size:1.5rem;
+    font-size:1.5em;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#808080;
+    text-decoration:underline;
 }
 
 .footer{
@@ -48,10 +55,14 @@ a:hover {
 .left-content img {
     max-width: 80%;
     border-radius: 15%;
-    margin: 5rem;
+    margin: 5em;
 }
 
 .container {
     width:75%;
-    margin-left:5rem;
+    margin-left:5em;
+}
+.cat-img {
+    max-width:300px;
+    border-radius:10%;
 }
