@@ -21,6 +21,8 @@
             <button id="css">css</button>
             <button id="writing">writing</button>
             <button id="talk">talk</button>
+            <button id="community">community</button>
+            <button id="open-source">open-source</button>
         </div>
         <p>
             Click the card for information about the project
@@ -85,6 +87,38 @@
                 <img src="images/project-cards/why_python.jpg" alt="Title slide from Why Python?"
                      class="project-card">
                 <figcaption class="p-card-caption">Talk: Why Python?</figcaption>
+            </figure>
+        </div>
+        {% include "projects/_hard-way.njk" %}
+        <div class="talk python filterable">
+            <figure id="hard-way" class="clickable-image">
+                <img src="images/project-cards/hard-way.jpg" alt="Title slide from Three Things to Learn the Hard Way"
+                     class="project-card">
+                <figcaption class="p-card-caption">Talk: Three Things to Learn the Hard Way</figcaption>
+            </figure>
+        </div>
+        {%  include "projects/_syjl.njk" %}
+        <div class="writing community open-source">
+            <figure id="syjl" class="clickable-image">
+                <img src="images/project-cards/syjl.png" alt="So You Just Learned"
+                     class="project-card">
+                <figcaption class="p-card-caption">So You Just Learned</figcaption>
+            </figure>
+        </div>
+        {%  include "projects/_nuances.njk" %}
+        <div class="talk python filterable">
+            <figure id="nuances" class="clickable-image">
+                <img src="images/project-cards/nuances.jpg" alt="Title slide from Three Python Nuances I wish I'd known earlier"
+                     class="project-card">
+                <figcaption class="p-card-caption">Talk: Three Python Nuances I Wish I'd Known Earlier</figcaption>
+            </figure>
+        </div>
+        {%  include "projects/_pyvideo.njk" %}
+        <div class="python community open-source">
+            <figure id="pyvideo" class="clickable-image">
+                <img src="images/project-cards/pyvideo.jpg" alt="PyVideo Logo"
+                     class="project-card">
+                <figcaption class="p-card-caption">PyVideo Data</figcaption>
             </figure>
         </div>
     </div>
