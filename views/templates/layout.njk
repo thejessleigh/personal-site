@@ -4,6 +4,7 @@
 		{% include 'templates/_head.njk' %}
 	</head>
 	<body>
+	<div class="container">
 		{% include 'templates/_nav.njk' %}
 		{#<h1>"I have a body," she said, knowing full well that she did not.</h1>#}
 		{% block content %}
@@ -11,5 +12,6 @@
 		{% endblock %}
 
 		{% include 'templates/_footer.njk' %}
+	</div>
 	</body>
 </html>

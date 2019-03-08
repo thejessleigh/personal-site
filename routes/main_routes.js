@@ -14,8 +14,8 @@ router.get('/portfolio', function(req, res, next){
     res.render('portfolio', {tags: tags});
 });
 
-router.get('/speaker', function(req, res, next){
-    res.render('speaker');
+router.get('/speaking', function(req, res, next){
+    res.render('speaking');
 });
 
 module.exports = router;
