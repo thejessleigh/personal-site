@@ -14,3 +14,8 @@ Array.from(triggerList).forEach(function(triggerId) {
 Array.from(closeButtons).forEach(function(closeButton){
     closeButton.addEventListener("click", function() {toggleModal(".show-")})
 });
+document.addEventListener("keyup", function(e) {
+    if (e.key === "Escape") {
+        toggleModal(".show-");
+    }
+});
