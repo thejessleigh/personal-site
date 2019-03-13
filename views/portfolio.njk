@@ -10,121 +10,114 @@
         <h2>Portfolio</h2>
 
 
-        <div class="button-container">
-            <p>
-                Click to filter by topic
-            </p>
-            <button id="python">python</button>
-            <button id="doodle">doodle</button>
-            <button id="js">js</button>
-            <button id="html">html</button>
-            <button id="css">css</button>
-            <button id="writing">writing</button>
-            <button id="talk">talk</button>
-            <button id="community">community</button>
-            <button id="open-source">open-source</button>
-        </div>
+        {#<div class="button-container">#}
+        {#<p>#}
+        {#Click to filter by topic#}
+        {#</p>#}
+        {#<button id="python">python</button>#}
+        {#<button id="doodle">doodle</button>#}
+        {#<button id="js">js</button>#}
+        {#<button id="html">html</button>#}
+        {#<button id="css">css</button>#}
+        {#<button id="writing">writing</button>#}
+        {#<button id="talk">talk</button>#}
+        {#<button id="community">community</button>#}
+        {#<button id="open-source">open-source</button>#}
+        {#</div>#}
         <p>
-            Click the card for information about the project
+            Click a project title for information
         </p>
     </div>
 
-
-    <div class="project-container">
+    {#<div class="project-container">#}
+    <div class="project">
         {% include 'projects/_background-noise.njk' %}
-        <div class="doodle js html css open-source filterable">
-            <figure id="noise" class="clickable-image">
-                <img src="images/project-cards/background-noise.jpg"
-                     alt="Screenshot of a dark screen with several small colored dots in a seemingly random pattern"
-                     class="project-card">
-                <figcaption class="p-card-caption">Doodle: background noise of the universe</figcaption>
-            </figure>
-        </div>
-        {% include 'projects/_simplybreathe.njk' %}
-        <div class="doodle js html css open-source filterable">
-            <figure id="breathe" class="clickable-image">
-                <img src="images/project-cards/simplybreathe.jpg"
-                     alt="Screenshot of deep breathing instructions accompanied by a gradient colored circle"
-                     class="project-card">
-                <figcaption class="p-card-caption">Doodle: Simply Breathe</figcaption>
-            </figure>
-        </div>
-        {% include "projects/_confetti.njk" %}
-        <div class="doodle js html css open-source filterable">
-            <figure id="confetti" class="clickable-image">
-                <img src="images/project-cards/confetti.jpg"
-                     alt="Screenshot of a dark screen with multicolored bubbles and a transparent line of text saying 'click me'"
-                     class="project-card">
-                <figcaption class="p-card-caption">Doodle: Confetti Burst</figcaption>
-            </figure>
-        </div>
-        {% include "projects/_dev.njk" %}
-        <div class="writing python filterable">
-            <figure id="dev" class="clickable-image">
-                <img src="images/project-cards/dev-logo.jpg" alt="Dev.to website logo" class="project-card">
-                <figcaption class="p-card-caption">Writing published on Dev.to</figcaption>
-            </figure>
-        </div>
-        {% include "projects/_mentoring.njk" %}
-        <div class="talk filterable">
-            <figure id="mentoring" class="clickable-image">
-                <img src="images/project-cards/mentoring.jpg"
-                     alt="Title slide from The Art of Mentoring and Being Mentored" class="project-card">
-                <figcaption class="p-card-caption">Talk: The Art of Mentoring</figcaption>
-            </figure>
-        </div>
-        {% include "projects/_zen.njk" %}
-        <div class="talk python filterable">
-            <figure id="zen" class="clickable-image">
-                <img src="images/project-cards/zopip.jpg" alt="Title slide from The Zen of Python in Practice"
-                     class="project-card">
-                <figcaption class="p-card-caption">Talk: The Zen of Python in Practice</figcaption>
-            </figure>
-        </div>
-        {% include "projects/_why.njk" %}
-        <div class="talk python filterable">
-            <figure id="why" class="clickable-image">
-                <img src="images/project-cards/why_python.jpg" alt="Title slide from Why Python?"
-                     class="project-card">
-                <figcaption class="p-card-caption">Talk: Why Python?</figcaption>
-            </figure>
-        </div>
-        {% include "projects/_hard-way.njk" %}
-        <div class="talk python filterable">
-            <figure id="hard-way" class="clickable-image">
-                <img src="images/project-cards/hard-way.jpg" alt="Title slide from Three Things to Learn the Hard Way"
-                     class="project-card">
-                <figcaption class="p-card-caption">Talk: Three Things to Learn the Hard Way</figcaption>
-            </figure>
-        </div>
-        {%  include "projects/_syjl.njk" %}
-        <div class="writing community open-source filterable">
-            <figure id="syjl" class="clickable-image">
-                <img src="images/project-cards/syjl.png" alt="So You Just Learned"
-                     class="project-card">
-                <figcaption class="p-card-caption">So You Just Learned</figcaption>
-            </figure>
-        </div>
-        {%  include "projects/_nuances.njk" %}
-        <div class="talk python filterable">
-            <figure id="nuances" class="clickable-image">
-                <img src="images/project-cards/nuances.jpg" alt="Title slide from Three Python Nuances I wish I'd known earlier"
-                     class="project-card">
-                <figcaption class="p-card-caption">Talk: Three Python Nuances I Wish I'd Known Earlier</figcaption>
-            </figure>
-        </div>
-        {%  include "projects/_pyvideo.njk" %}
-        <div class="python community open-source filterable">
-            <figure id="pyvideo" class="clickable-image">
-                <img src="images/project-cards/pyvideo.jpg" alt="PyVideo Logo"
-                     class="project-card">
-                <figcaption class="p-card-caption">PyVideo Data</figcaption>
-            </figure>
-        </div>
+        <img src="images/project-cards/background-noise.jpg"
+             alt="Screenshot of a dark screen with several small colored dots in a seemingly random pattern">
+        <button class="js-modal" data-modal-content-id="noise-modal" data-modal-close-text="Close"
+                data-model-close-title="Background Noise" data-modal-prefix-class="simple">
+            Background noise of the universe
+        </button>
+    </div>
+    {% include 'projects/_simplybreathe.njk' %}
+    <div class="project">
+        <img src="images/project-cards/simplybreathe.jpg"
+             alt="Screenshot of deep breathing instructions accompanied by a gradient colored circle">
+        <button class="js-modal" data-modal-content-id="breathe-modal" data-modal-close-text="Close"
+                data-model-close-title="Simply Breathe" data-modal-prefix-class="simple">Simply Breathe
+        </button>
+    </div>
+    {% include "projects/_confetti.njk" %}
+    <div class="project">
+        <img src="images/project-cards/confetti.jpg"
+             alt="Screenshot of a dark screen with multicolored bubbles and a transparent line of text saying 'click me'">
+        <button class="js-modal" data-modal-content-id="confetti-modal" data-modal-close-text="Close"
+                data-model-close-title="Confetti Burst" data-modal-prefix-class="simple">Confetti Burst
+        </button>
+    </div>
+    {% include "projects/_dev.njk" %}
+    <div class="project">
+        <img src="images/project-cards/dev-logo.jpg" alt="Dev.to website logo">
+        <button class="js-modal" data-modal-content-id="dev-modal" data-modal-close-text="Close"
+                data-model-close-title="Dev.to Articles" data-modal-prefix-class="simple">Writing published on Dev.to
+        </button>
+    </div>
+    {% include "projects/_mentoring.njk" %}
+    <div class="project">
+        <img src="images/project-cards/mentoring.jpg"
+             alt="Title slide from The Art of Mentoring and Being Mentored">
+        <button class="js-modal" data-modal-content-id="mentoring-modal" data-modal-close-text="Close"
+                data-model-close-title="The Art of Mentoring and Being Mentored" data-modal-prefix-class="simple">The
+            Art of Mentoring
+        </button>
+    </div>
+    {% include "projects/_zen.njk" %}
+    <div class="project">
+        <img src="images/project-cards/zopip.jpg" alt="Title slide from The Zen of Python in Practice">
+        <button class="js-modal" data-modal-content-id="zen-modal" data-modal-close-text="Close"
+                data-model-close-title="The Zen of Python in Practice" data-modal-prefix-class="simple">
+            The Zen of Python in Practice
+        </button>
+    </div>
+    {% include "projects/_why.njk" %}
+    <div class="project">
+        <img src="images/project-cards/why_python.jpg" alt="Title slide from Why Python?">
+        <button class="js-modal" data-modal-content-id="why-modal" data-modal-close-text="Close"
+                data-model-close-title="Why Python?" data-modal-prefix-class="simple">
+            Why Python?
+        </button>
+    </div>
+    {% include "projects/_hard-way.njk" %}
+    <div class="project">
+    <img src="images/project-cards/hard-way.jpg" alt="Title slide from Three Things to Learn the Hard Way">
+        <button class="js-modal" data-modal-content-id="hard-way-modal" data-modal-close-text="Close" data-model-close-title="Three Things to Learn the Hard Way" data-modal-prefix-class="simple">3 Things to Learn the Hard Way
+        </button>
+    </div>
+    {%  include "projects/_syjl.njk" %}
+    <div class="project">
+    <img src="images/project-cards/syjl.png" alt="So You Just Learned">
+        <button class="js-modal" data-modal-content-id="syjl-modal" data-modal-close-text="Close"
+                data-model-close-title="So You Just Learned" data-modal-prefix-class="simple">So You Just Learned
+        </button>
+    </div>
+    {%  include "projects/_nuances.njk" %}
+    <div class="project">
+    <img src="images/project-cards/nuances.jpg" alt="Title slide from Three Python Nuances I wish I'd known earlier">
+        <button class="js-modal" data-modal-content-id="nuances-modal" data-modal-close-text="Close"
+                data-model-close-title="Three Python Nuances I Wish I'd Known Earlier" data-modal-prefix-class="simple">Three Python Nuances
+        </button>
+    </div>
+    {%  include "projects/_pyvideo.njk" %}
+    <div class="project">
+    <img src="images/project-cards/pyvideo.jpg" alt="PyVideo Logo">
+        <button class="js-modal" data-modal-content-id="pyvideo-modal" data-modal-close-text="Close"
+                data-model-close-title="PyVideo Data" data-modal-prefix-class="simple">PyVideo Data
+        </button>
+    </div>
     </div>
 
 
-    <script src="js/modal.js"></script>
+    <script src="js/a11y-modal.js"></script>
     <script src="js/tags.js"></script>
 
 {% endblock %}

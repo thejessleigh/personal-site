@@ -8,106 +8,109 @@
     margin: 0 auto;
 }
 
-.project-card {
+.project {
+    display:inline-grid;
+    padding: 20px;
+}
+
+.project img {
     max-width: 250px;
     border-radius: 15%;
     border: 1px dotted #aaaaaa;
+    height: auto;
 }
 
-.p-card-caption {
-    font-size:20px;
-    text-align: center;
-    margin-left:0;
-    margin-top: 18px;
+.project button {
+    background-color: #dadada;
+    border: 1px dotted #aaaaaa;
+    font-size: 14px;
+    padding: 5px 5px;
+    margin-top: 5px;
+    border-radius:5px;
 }
 
-.modal {
-    position:fixed;
-    left: 0;
+.project button:focus,
+.project button:hover,
+.project button:active {
+    background-color: #aaa;
+}
+
+/* needed for old browsers */
+dialog {
+    display: block;
+}
+
+/* removes scroll when modal is opened */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* overlay covers everything */
+.simple-modal-overlay {
+    position: fixed;
     top: 0;
-    width: 75%;
-    height: 85%;
-    background-color: #dddddd;
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-}
-
-.modal-content {
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:#ffffff;
-    padding: 5rem;
-    width: 65%;
-    height: 60%;
-    border-radius: 5%;
-}
-
-.close-button {
-    position: absolute;
-    border: none;
-    width: 4rem;
-    line-height: 4rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 50%;
+    bottom: 0;
     right: 0;
-    /*margin-top: 10rem;*/
-    /*margin-right:7rem;*/
-}
-
-.close-button:hover {
-    background-color: #aaaaaa;
-}
-
-.show-modal{
-    opacity: .98;
-    visibility: visible;
-    transform: scale(1) translate(10%, 10%);
-    border-radius: 10%;
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
-
-.hide{
-    display: none;
-}
-
-button {
-    background: #eeeeee;
-    border-radius:10%;
-}
-
-.clickable-image{
+    left: 0;
+    background: #fff;
+    opacity: .8;
+    z-index: 666; /* satan inside */
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    max-width:200px;
 }
 
-.pushed {
-    background: #aaaaaa;
+/* modal */
+.simple-modal {
+    position: fixed;
+    left: 15%;
+    top: 5%;
+    width: 70%;
+    max-height: 98vh;
+    right: auto;
+    border: 2px solid #000;
+    background: #fff;
+    z-index: 667;
+    padding: 2em;
+    overflow: auto;
 }
-
-.portfolio-header {
+.simple-modal-close {
+    float: right;
+    background: #00008b;
+    border-radius: 1em;
+    color: #fff;
+    padding: .25em;
+    text-decoration: none;
+    line-height: 1.2;
     text-align: center;
 }
-
-.portfolio-header h2
-{
-    margin-top: 1em;
+.simple-modal-close:focus,
+.simple-modal-close:hover,
+.simple-modal-close:active {
+    background: #483d8b;
+}
+.simple-modal-overlay[data-background-click="disabled"] {
+    cursor: auto;
 }
 
-.button-container {
-    margin-top: 0;
-    margin-bottom: 2em;
+/* for this example: tablets */
+@media (max-width: 55.625em) {
+
+    .simple-modal {
+        left: 5%;
+        top: 5%;
+        bottom: 5%;
+        width: 90%;
+    }
+
 }
 
-.exit {
-    margin:2em;
-    font-size:0.75em;
+/* for this example: mobile */
+@media (max-width: 44.375em) {
+
+    .simple-modal {
+        left: 1%;
+        top: 1%;
+        max-width: 98%;
+        bottom: 1%;
+    }
+
 }

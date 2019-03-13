@@ -1,6 +1,5 @@
-<div class="modal" id="{{ modalId }}">
-    <span class='close-button'>&times;</span>
-    <div class="modal-content">
+<div class="hidden" id="{{ modalId }}">
+    {#<div class="modal-content">#}
         <h2>{{ title }}</h2>
         <h3>Description</h3>
         {% block projectContent %}
@@ -11,5 +10,5 @@
 
         {% endblock %}
         <p class="exit">Press the <code>esc</code> key or click the <code>x</code> at the top right corner of this box to exit.</p>
-    </div>
+    {#</div>#}
 </div>
