@@ -72,3 +72,29 @@ a:hover {
 .hidden {
     display:none;
 }
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width:100%;
+        margin:auto;
+    }
+    .nav a {
+        font-size: 1em;
+    }
+    .home-container {
+        flex-direction:column-reverse;
+    }
+    .left-content {
+        width:50%;
+    }
+    .left-content img{
+        max-width:100%;
+        margin: 1em;
+    }
+    .right-content {
+        width:100%;
+    }
+}

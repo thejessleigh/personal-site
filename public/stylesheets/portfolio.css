@@ -27,6 +27,7 @@
     padding: 5px 5px;
     margin-top: 5px;
     border-radius:5px;
+    max-width:150px;
 }
 
 .project button:focus,
@@ -109,8 +110,13 @@ dialog {
     .simple-modal {
         left: 1%;
         top: 1%;
-        max-width: 98%;
+        max-width: 80%;
         bottom: 1%;
+        padding:1em;
+    }
+
+    .project img {
+        max-width:150px;
     }
 
 }
