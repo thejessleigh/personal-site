@@ -8,7 +8,7 @@ nunjucks.configure('views', {
 });
 
 app.set('view engine', 'njk');
-app.listen(3000);
+app.listen(3001);
 
 const mainRouter = require('./routes/main_routes');
 const thenRouter = require('./routes/then_routes');
