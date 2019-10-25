@@ -7,66 +7,81 @@
 {% block content %}
 
     <div class="portfolio-header">
-        <h2>Portfolio</h2>
-
-
-        {#<div class="button-container">#}
-        {#<p>#}
-        {#Click to filter by topic#}
-        {#</p>#}
-        {#<button id="python">python</button>#}
-        {#<button id="doodle">doodle</button>#}
-        {#<button id="js">js</button>#}
-        {#<button id="html">html</button>#}
-        {#<button id="css">css</button>#}
-        {#<button id="writing">writing</button>#}
-        {#<button id="talk">talk</button>#}
-        {#<button id="community">community</button>#}
-        {#<button id="open-source">open-source</button>#}
-        {#</div>#}
+        <h1>Portfolio</h1>
         <p>
-            Click a project title for information
+            Click a project title or image for information
         </p>
     </div>
 
-    <div class="project-container">
+    <h2>Projects and Doodles<h2>
+    <div id="projects" class="project-container">
+
+        {% include 'projects/_simplybreathe.njk' %}
+        <div class="project">
+            <img src="images/project-cards/simplybreathe.jpg"
+                 alt="Screenshot of deep breathing instructions accompanied by a gradient colored circle" class="js-modal" data-modal-content-id="breathe-modal" data-modal-close-text="Close"
+                    data-model-close-title="Simply Breathe" data-modal-prefix-class="simple">
+            <button class="js-modal" data-modal-content-id="breathe-modal" data-modal-close-text="Close"
+                    data-model-close-title="Simply Breathe" data-modal-prefix-class="simple">Simply Breathe
+            </button>
+        </div>
+        {% include "projects/_friday.njk" %}
+        <div class="project">
+            <img src="images/project-cards/friday.jpg" alt="Screencap of isitfridayyet.today" class="js-modal" data-modal-content-id="friday-modal" data-modal-close-text="Close"
+                    data-model-close-title="The Friday Series" data-modal-prefix-class="simple">
+            <button class="js-modal" data-modal-content-id="friday-modal" data-modal-close-text="Close"
+                    data-model-close-title="The Friday Series" data-modal-prefix-class="simple">The Friday Series
+            </button>
+        </div>
         <div class="project">
             {% include 'projects/_background-noise.njk' %}
             <img src="images/project-cards/background-noise.jpg"
-                 alt="Screenshot of a dark screen with several small colored dots in a seemingly random pattern">
+                 alt="Screenshot of a dark screen with several small colored dots in a seemingly random pattern" class="js-modal" data-modal-content-id="noise-modal" data-modal-close-text="Close"
+                    data-model-close-title="Background Noise" data-modal-prefix-class="simple">
             <button class="js-modal" data-modal-content-id="noise-modal" data-modal-close-text="Close"
                     data-model-close-title="Background Noise" data-modal-prefix-class="simple">
                 Background noise of the universe
             </button>
         </div>
-        {% include 'projects/_simplybreathe.njk' %}
-        <div class="project">
-            <img src="images/project-cards/simplybreathe.jpg"
-                 alt="Screenshot of deep breathing instructions accompanied by a gradient colored circle">
-            <button class="js-modal" data-modal-content-id="breathe-modal" data-modal-close-text="Close"
-                    data-model-close-title="Simply Breathe" data-modal-prefix-class="simple">Simply Breathe
-            </button>
-        </div>
         {% include "projects/_confetti.njk" %}
         <div class="project">
             <img src="images/project-cards/confetti.jpg"
-                 alt="Screenshot of a dark screen with multicolored bubbles and a transparent line of text saying 'click me'">
+                 alt="Screenshot of a dark screen with multicolored bubbles and a transparent line of text saying 'click me'" class="js-modal" data-modal-content-id="confetti-modal" data-modal-close-text="Close" data-model-close-title="Confetti Burst" data-modal-prefix-class="simple">
             <button class="js-modal" data-modal-content-id="confetti-modal" data-modal-close-text="Close"
                     data-model-close-title="Confetti Burst" data-modal-prefix-class="simple">Confetti Burst
             </button>
         </div>
+    </div>
+
+    <h2>Writing</h2>
+    <div id="writing" class="project-container">
         {% include "projects/_dev.njk" %}
         <div class="project">
-            <img src="images/project-cards/dev-logo.jpg" alt="Dev.to website logo">
+            <img src="images/project-cards/dev-logo.jpg" alt="Dev.to website logo" class="js-modal" data-modal-content-id="dev-modal" data-modal-close-text="Close"
+                data-model-close-title="Dev.to Articles" data-modal-prefix-class="simple">
             <button class="js-modal" data-modal-content-id="dev-modal" data-modal-close-text="Close"
                     data-model-close-title="Dev.to Articles" data-modal-prefix-class="simple">Writing published on
                 Dev.to
             </button>
         </div>
+        {% include "projects/_dbc.njk" %}
+        <div class="project">
+            <img src="images/project-cards/dbc_logo_old.jpg" alt="Dev Bootcamp Logo shaped like a boot print" class="js-modal" data-modal-content-id="dbc-modal" data-modal-close-text="Close"
+                data-model-close-title="Dev Bootcamp Writing" data-modal-prefix-class="simple">
+            <button class="js-modal" data-modal-content-id="dbc-modal" data-modal-close-text="Close"
+                data-model-close-title="Dev Bootcamp Writing" data-modal-prefix-class="simple">Writing for and about Dev Bootcamp
+            </button>
+        </div>
+
+    </div>
+
+    <h2>Talks</h2>
+    <div id="talks" class="project-container">
         {% include "projects/_mentoring.njk" %}
         <div class="project">
             <img src="images/project-cards/mentoring.jpg"
-                 alt="Title slide from The Art of Mentoring and Being Mentored">
+                 alt="Title slide from The Art of Mentoring and Being Mentored" class="js-modal" data-modal-content-id="mentoring-modal" data-modal-close-text="Close"
+                    data-model-close-title="The Art of Mentoring and Being Mentored" data-modal-prefix-class="simple">
             <button class="js-modal" data-modal-content-id="mentoring-modal" data-modal-close-text="Close"
                     data-model-close-title="The Art of Mentoring and Being Mentored" data-modal-prefix-class="simple">
                 The
@@ -75,7 +90,8 @@
         </div>
         {% include "projects/_zen.njk" %}
         <div class="project">
-            <img src="images/project-cards/zopip.jpg" alt="Title slide from The Zen of Python in Practice">
+            <img src="images/project-cards/zopip.jpg" alt="Title slide from The Zen of Python in Practice" class="js-modal" data-modal-content-id="zen-modal" data-modal-close-text="Close"
+                    data-model-close-title="The Zen of Python in Practice" data-modal-prefix-class="simple">
             <button class="js-modal" data-modal-content-id="zen-modal" data-modal-close-text="Close"
                     data-model-close-title="The Zen of Python in Practice" data-modal-prefix-class="simple">
                 The Zen of Python in Practice
@@ -83,7 +99,8 @@
         </div>
         {% include "projects/_why.njk" %}
         <div class="project">
-            <img src="images/project-cards/why_python.jpg" alt="Title slide from Why Python?">
+            <img src="images/project-cards/why_python.jpg" alt="Title slide from Why Python?" class="js-modal" data-modal-content-id="why-modal" data-modal-close-text="Close"
+                    data-model-close-title="Why Python?" data-modal-prefix-class="simple">
             <button class="js-modal" data-modal-content-id="why-modal" data-modal-close-text="Close"
                     data-model-close-title="Why Python?" data-modal-prefix-class="simple">
                 Why Python?
@@ -91,44 +108,47 @@
         </div>
         {% include "projects/_hard-way.njk" %}
         <div class="project">
-            <img src="images/project-cards/hard-way.jpg" alt="Title slide from Three Things to Learn the Hard Way">
+            <img src="images/project-cards/hard-way.jpg" alt="Title slide from Three Things to Learn the Hard Way" class="js-modal" data-modal-content-id="hard-way-modal" data-modal-close-text="Close"
+                    data-model-close-title="Three Things to Learn the Hard Way" data-modal-prefix-class="simple">
             <button class="js-modal" data-modal-content-id="hard-way-modal" data-modal-close-text="Close"
                     data-model-close-title="Three Things to Learn the Hard Way" data-modal-prefix-class="simple">3
                 Things to Learn the Hard Way
             </button>
         </div>
-        {% include "projects/_syjl.njk" %}
-        <div class="project">
-            <img src="images/project-cards/syjl.png" alt="So You Just Learned">
-            <button class="js-modal" data-modal-content-id="syjl-modal" data-modal-close-text="Close"
-                    data-model-close-title="So You Just Learned" data-modal-prefix-class="simple">So You Just Learned
-            </button>
-        </div>
         {% include "projects/_nuances.njk" %}
         <div class="project">
             <img src="images/project-cards/nuances.jpg"
-                 alt="Title slide from Three Python Nuances I wish I'd known earlier">
+                 alt="Title slide from Three Python Nuances I wish I'd known earlier" class="js-modal" data-modal-content-id="nuances-modal" data-modal-close-text="Close"
+                    data-model-close-title="Three Python Nuances I Wish I'd Known Earlier"
+                    data-modal-prefix-class="simple">
             <button class="js-modal" data-modal-content-id="nuances-modal" data-modal-close-text="Close"
                     data-model-close-title="Three Python Nuances I Wish I'd Known Earlier"
                     data-modal-prefix-class="simple">Three Python Nuances
             </button>
         </div>
+    </div>
+
+    <h2>Open Source Contributions</h2>
+    <div id="contributions" class="project-container">
+        {% include "projects/_syjl.njk" %}
+        <div class="project">
+            <img src="images/project-cards/syjl.png" alt="So You Just Learned" class="js-modal" data-modal-content-id="syjl-modal" data-modal-close-text="Close"
+                    data-model-close-title="So You Just Learned" data-modal-prefix-class="simple">
+            <button class="js-modal" data-modal-content-id="syjl-modal" data-modal-close-text="Close"
+                    data-model-close-title="So You Just Learned" data-modal-prefix-class="simple">So You Just Learned
+            </button>
+        </div>
+
         {% include "projects/_pyvideo.njk" %}
         <div class="project">
-            <img src="images/project-cards/pyvideo.jpg" alt="PyVideo Logo">
+            <img src="images/project-cards/pyvideo.jpg" alt="PyVideo Logo" class="js-modal" data-modal-content-id="pyvideo-modal" data-modal-close-text="Close"
+                    data-model-close-title="PyVideo Data" data-modal-prefix-class="simple">
             <button class="js-modal" data-modal-content-id="pyvideo-modal" data-modal-close-text="Close"
                     data-model-close-title="PyVideo Data" data-modal-prefix-class="simple">PyVideo Data
             </button>
         </div>
-        {% include "projects/_friday.njk" %}
-        <div class="project">
-            <img src="images/project-cards/friday.jpg" alt="Screencap of isitfridayyet.today">
-            <button class="js-modal" data-modal-content-id="friday-modal" data-modal-close-text="Close"
-                    data-model-close-title="The Friday Series" data-modal-prefix-class="simple">The Friday Series
-            </button>
-        </div>
-    </div>
 
+    </div>
 
     <script src="js/a11y-modal.js"></script>
     <script src="js/tags.js"></script>
