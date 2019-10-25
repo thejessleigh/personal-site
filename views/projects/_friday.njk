@@ -1,0 +1,25 @@
+{% extends "templates/project_modal.njk" %}
+
+{% set modalId = "friday-modal" %}
+
+{% set title = "The Friday Series" %}
+
+{% block projectContent %}
+    <p>
+        The Friday Series is a pair of sister sites that inform you whether or not it is Friday. <em>Is it Friday Yet Today?</em> also changes background color and sometimes has CSS animations based on the season. <em>Is it Not Friday Today?</em> is simpler and more straightforward.
+    </p>
+
+    <p>
+        The day and season are programatically determined, and can be tested in the developer console.
+    </p>
+{% endblock %}
+
+{% block links %}
+    <p>
+        <ul>
+            <li>View the code <a href="https://github.com/thejessleigh/doodles">on Github</a>.</li>
+            <li><a href="https://isitnotfriday.today">Is It Not Friday Today?</a></li>
+            <li><a href="https://isitfridayyet.today/">Is it Friday Yet Today?</a></li>
+        </ul>
+    </p>
+{% endblock %}
