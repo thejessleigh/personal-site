@@ -9,13 +9,13 @@ router.get('/now', function(req, res, next){
     res.render('now');
 });
 
-router.get('/portfolio', function(req, res, next){
+router.get('/software', function(req, res, next){
     let tags = req.query.tags;
-    res.render('portfolio', {tags: tags});
+    res.render('software', {tags: tags});
 });
 
-router.get('/speaking', function(req, res, next){
-    res.render('speaking');
+router.get('/writing', function(req, res, next){
+    res.render('writing');
 });
 
 module.exports = router;
